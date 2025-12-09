@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
+  --font-bricolage_Grotesque-sans: "Bricolage Grotesque", sans-serif;
+  --font-work-Sans-sans: "Work Sans", sans-serif;
+  --font-inter-sans: "Inter", sans-serif;
+  --color-quant-yellow: #f5cb5c;
+  --color-quant-dark-yellow: #feae2e;
+  --color-quant-orange: #ba4b2f;
+  --color-quant-black: #141204;
+  --color-quant-blue: #38618c;
+  --color-quant-white: #ffffff;
+  --color-quant-gray: #fff9f3;
+}
+
+@keyframes loaderTextGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(-45deg, #ba4b2f, #f5cb5c, #38618c, #141204);
+  background-size: 300% 300%;
+  animation: loaderTextGradient 1.5s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  will-change: background-position;
+  text-rendering: geometricPrecision;
+  backface-visibility: hidden;
+  display: inline-block;
+}
+
+body {
+  @apply font-work-Sans-sans;
+}
+
+.main_heading{
+  @apply text-[30px] md:text-[48px] lg:text-[60px] xl:text-[70px] 2xl:text-[86px]  font-medium;
+}
+.main_sub_heading{
+  @apply text-[20px] md:text-[30px] lg:text-[40px] xl:text-[70px] 2xl:text-[70px] font-medium;
+}
+.main_sub_heading_gb{
+  @apply text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[70px] font-medium;
+}
+.main_sub_animation_title{
+  @apply text-[18px] md:text-[20px] lg:text-[30px] xl:text-[48px] 2xl:text-[48px] font-medium;
+}
+
+.nav-btn {
+  @apply text-base;
+}
+
+.custom-unique-heading {
+  @apply text-[20px]
+}
+
+.custom-unique-para {
+  @apply text-[16px]
+}
+
+.custom-heading {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-bricolage_Grotesque-sans font-medium;
+}
+
+.custom-heading-para {
+  @apply text-[18px] md:text-[20px] lg:text-[24px];
+}
+
+.custom-para {
+  @apply text-[17px];
+}
+
+.custom-footer-header {
+  @apply text-[14px] md:text-[16px];
+}
+
+.custom-milestone-text {
+  @apply text-[17px] lg:text-[24px] xl:text-[36px]
+}
+
+.custom-careers-title {
+  @apply text-[12px] md:text-[32px];
+}
+
+.vertical_line {
+  @apply before:content-[''] before:absolute before:left-[10vw] md:before:left-12 lg:before:left-13 xl:before:left-43 before:top-[50%] md:before:top-[38%] 2xl:before:top-[42%] before:h-[15%] before:w-[1px] before:bg-gray-200;
+}

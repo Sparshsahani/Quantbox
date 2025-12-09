@@ -1,0 +1,14 @@
+.imgheight {
+  height: 400px;
+ 
+  object-fit: cover;
+ 
+}
+.imgheight.shrink {
+  height: 140px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
