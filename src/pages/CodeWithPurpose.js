@@ -1,132 +1,108 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Image from "next/image";
-import PlusImg from "../../public/images/codewithpurposeImg/life_work.png"
-
+import React, { useState, useEffect } from "react";
 export default function CodeWithPurpose() {
-  const videoRef = useRef(null);
+  const milestones = [
+    { date: "Jun 2021", title: "First set of freshers" },
+    { date: "Mar 2022", title: "Bangalore, Amsterdam & Singapore" },
+    { date: "Jun 2023", title: "Delhi & Chicago Expansion" },
+    { date: "oct 2023", title: "London & Cambridge" },
+    { date: "Jan 2024", title: "Hongkong" },
+  ];
 
-  const { scrollYProgress } = useScroll({
-    target: videoRef,
-    offset: ["start end", "end end"],
-  });
+  // ✅ Center se start karne ke liye
+  const [activeIndex, setActiveIndex] = useState(
+    Math.floor(milestones.length / 2)
+  );
 
-  // Detect screen width for responsive range logic
-  const [screenSize, setScreenSize] = useState("desktop");
+  const prevSlide = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? milestones.length - 1 : prev - 1
+    );
+  };
 
+  const nextSlide = () => {
+    setActiveIndex((prev) =>
+      prev === milestones.length - 1 ? 0 : prev + 1
+    );
+  };
   useEffect(() => {
-    const updateScreenSize = () => {
-      const width = window.innerWidth;
-      if (width < 640) setScreenSize("sm");
-      else if (width < 768) setScreenSize("md");
-      else if (width < 1024) setScreenSize("lg");
-      else setScreenSize("xl");
-    };
+  const interval = setInterval(() => {
+    nextSlide();
+  }, 3500); // 3.5 seconds auto slide
 
-    updateScreenSize();
-    window.addEventListener("resize", updateScreenSize);
-    return () => window.removeEventListener("resize", updateScreenSize);
-  }, []);
-
-  // Scroll-based responsive width ranges
-  let widthRange;
-  if (screenSize === "sm") {
-    widthRange = ["20vw", "80vw"];
-  } else if (screenSize === "md") {
-    widthRange = ["20vw", "80vw"];
-  } else if (screenSize === "lg") {
-    widthRange = ["30vw", "70vw"];
-  } else {
-    widthRange = ["20vw", "60vw"];
-  }
-
-  const rawWidth = useTransform(scrollYProgress, [0, 1], widthRange);
-  const rawHeight = useTransform(scrollYProgress, [0, 1], ["70vh", "70vh"]);
-
-  const width = useSpring(rawWidth, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
-  const height = useSpring(rawHeight, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
+  return () => clearInterval(interval);
+}, [activeIndex]);
 
   return (
+
     <>
-      <section className="relative md:py-20 bg-quant-orange w-full h-full bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-cover bg-no-repeat">
-        <div className="px-6 py-16 md:py-0 md:mx-4 xl:mx-16 2xl:mx-36 flex flex-col gap-y-20">
-          <div className="flex flex-col gap-y-5 ">
-            <div className="custom-heading xl:leading-18 2xl:leading-20 text-quant-white 2xl:mr-80 uppercase font-medium">
-              <h1>Code with purpose.</h1>
-              <h1>Learn from the best.</h1>
+      <section className="relative 2xl:max-w-[1920px] mx-auto h-[100vh] overflow-hidden">
+        <div className=" bg-[url('/images/codewithpurposeImg/hero_banner.png')] bg-cover bg-center w-full h-[300px] md:h-[600px] font-bricolage_Grotesque-sans ">
+          <div className="flex flex-col justify-center items-start h-full">
+            <div className="main_sub_heading uppercase 2xl:leading-20 text-quant-white ml-35">
+              <h1>
+                our <span className="text-quant-orange">milestones</span>
+              </h1>
+              <h1>marked by code</h1>
+              <h1>and curiosity</h1>
             </div>
-            <div className="custom-para text-quant-white font-work-Sans-sans tracking-wide xl:mr-[45%] 2xl:mr-[62%]">
-              <p>
-                Delve deep into the experience of internships that let you gain
-                insights into real world problem solving, working and getting
-                mentored by the most brilliant minds of the current industry,
-              </p>
-            </div>
-
-            <div className=" bg-quant-dark-yellow md:w-[40vw] lg:w-[30vw] md:h-[4vh] xl:w-[22vw] 2xl:w-[20vw] flex justify-center items-center gap-2">
-              <button className="custom-para uppercase">
-                JOIN OUR INTERNSHIPS
-              </button>
-              <FaArrowRightLong className="text-2xl" />
+            <p className="text-quant-white ml-35 font-work-Sans-sans custom-para">Charting a timeline of relentless growth</p>
+          </div>
+          <div className=" absolute bottom-[23%] left-[40%] flex flex-row gap-x-8 ">
+            <div
+              className="flex flex-row gap-x-8 transition-transform duration-500"
+              style={{
+                transform: `translateX(-${activeIndex * 22}vw)`,
+              }}
+            >
+              {milestones.map((item, index) => {
+                // const isActive = index === activeIndex;
+                return <div key={index} className=" h-[24vh] w-[20vw] bg-quant-gray border rounded-3xl border-quant-orange pl-5.5 pt-10.5">
+                  <h3 className="custom-milestone-text font-medium text-quant-orange capitalize">{item.date}</h3>
+                  <p className="custom-careers-title font-medium">{item.title}</p>
+                </div>
+              })}
             </div>
           </div>
-          <div className="w-full md:h-[20vh] 2xl:h-[10vh] max-sm:hidden flex justify-center items-center ">
-              <div className="ml-50 w-[20vw]">
-                  <Image
-                  src={PlusImg}
-                  alt="plus_logo"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover object-center"
-                  />
-              </div>
-          </div>
-          <div className="relative h-full flex flex-col justify-end items-baseline ">
-            <div className="before:content-[''] before:absolute before:left-[10vw] before:top-[50%] before:h-[15%] before:w-[1px] max-sm:hidden md:before:left-00 md:before:top-[-50%] md:before:h-[20%] md:before:left-0 lg:before:left-0 lg:before:h-[25%] lg:before:top-[-55%] xl:before:left-0 xl:before:top-[-53%] xl:before:h-[50%] 2xl:before:top-[-35%] before:bg-gray-200"></div>
-            {/* Rotated Text aligned to the left of red box */}
-            <div className="absolute bottom-0 md:bottom-0 left-9 md:left-5 lg:left-7 xl:left-7 rotate-[-90deg] origin-left text-left custom-heading-para whitespace-nowrap">
-              <p className="uppercase text-quant-white tracking-wider lg:text-[20px]">
-                AT QUANTBOX people power every
-              </p>
-              <p className="uppercase text-quant-white tracking-wider">
-                line of code
-              </p>
-            </div>
+          <div>
+            <div className="absolute bottom-[10%] w-full flex justify-center">
+              <div className="w-[90%] relative flex items-center justify-center gap-6">
 
-            {/* Flex row to align video bottom right */}
-            <div className="w-full flex justify-end items-end px-4 pb-4">
-              <motion.div
-                ref={videoRef}
-                style={{
-                  width,
-                  height,
-                  willChange: "width, height",
-                  transition: "all ease-in",
-                }}
-                className="overflow-hidden"
-              >
-                <video
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                {/* ✅ LEFT ARROW */}
+                <button
+                  onClick={prevSlide}
+                  className="w-12 h-12 rounded-full border border-black bg-white hover:bg-black group transition flex items-center justify-center"
                 >
-                  <source src="/videos/Render.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </motion.div>
+                  <span className="text-black group-hover:text-white text-xl">
+                    ←
+                  </span>
+                </button>
+
+                {/* ✅ DOTS (ARROWS KE BEECH) */}
+                <div className="flex gap-3">
+                  {milestones.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveIndex(index)}
+                      className={`w-2.5 h-2.5 rounded-full transition
+          ${activeIndex === index ? "bg-black scale-125" : "bg-gray-400"}`}
+                    />
+                  ))}
+                </div>
+
+                {/* ✅ RIGHT ARROW */}
+                <button
+                  onClick={nextSlide}
+                  className="w-12 h-12 rounded-full border border-black bg-white hover:bg-black group transition flex items-center justify-center"
+                >
+                  <span className="text-black group-hover:text-white text-xl">
+                    →
+                  </span>
+                </button>
+
+              </div>
             </div>
+
           </div>
         </div>
       </section>

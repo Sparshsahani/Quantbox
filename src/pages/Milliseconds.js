@@ -64,23 +64,22 @@ export default function Milliseconds() {
   };
 
   return (
-    <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-40 xl:pt-40 ">
+    <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-35 xl:pt-40 ">
       {/* Heading */}
       <div className="mb-12 xl:w-6xl uppercase">
-        <div className="grid grid-cols-[60%_40%] max-sm:grid-cols-[70%_30%]">
-          <div className=" custom-heading font-medium">
-            <h1 className="xl:whitespace-nowrap">WE operate where</h1>
-            <h1 className="text-quant-orange">milliseconds</h1>
-            <h1>move markets.</h1>
-          </div>
-          <div className="md:ml-3">
+
+        <div className=" custom-heading font-medium">
+          <h1 >where <span className="text-quant-orange">milliseconds</span> </h1>
+          <h1>move markets.</h1>
+        </div>
+        {/* <div className="md:ml-3">
             {mounted && (
               <span className="text-quant-orange text-xl max-sm:w-[5%] xl:mt-[0.5%]">
                 {formatTime(time)}
               </span>
             )}
-          </div>
-        </div>
+          </div> */}
+
       </div>
 
       <div className="grid grid-col-1 md:grid-cols-2 xl:flex-row justify-between gap-y-20 font-body pb-20">
