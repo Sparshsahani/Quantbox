@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   return (
     <main
-      className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[50vh] md:h-[65vh] lg:h-[80vh] xl:h-[90vh] text-quant-white p-10 overflow-visible`}
+      className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[50vh] md:h-[65vh] lg:h-[80vh] xl:h-[90vh] text-quant-text p-10 overflow-visible`}
     >
       {/* Headline Text */}
       <div className="main_heading xl:leading-24 md:mx-5 lg:mx-20 xl:mx-25 mt-5 lg:mt-15 uppercase font-hanken-grotesk">

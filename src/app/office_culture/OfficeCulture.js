@@ -94,7 +94,7 @@ and being part of a vibrant, supportive team culture.`,
             {/* hero section */}
             <section >
                 <main
-                    className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[45vh] md:h-[80vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] text-quant-white p-10 overflow-visible 2xl:max-w-[1920px] mx-auto`}
+                    className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[45vh] md:h-[80vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[100vh] text-quant-text p-10 overflow-visible 2xl:max-w-[1920px] mx-auto`}
                 >
 
                     {/* <div className="flex flex-wrap gap-x-2 items-center mb-2 lg:mx-15 xl:mx-10 2xl:mx-27">
@@ -108,7 +108,7 @@ and being part of a vibrant, supportive team culture.`,
                     </div> */}
 
                     {/* Headline Text */}
-                    <div className="main_heading leading-10 md:leading-12 lg:leading-15 xl:leading-20 2xl:leading-24 md:mx-0 md:mt-15 lg:mt-15 lg:mx-15 xl:mt-15 xl:mx-10 2xl:mt-20 2xl:mx-25 mt-5  uppercase font-bricolage_Grotesque-sans">
+                    <div className="main_heading leading-10 md:leading-12 lg:leading-15 xl:leading-20 2xl:leading-24 md:mx-0 md:mt-15 lg:mt-15 lg:mx-15 xl:mt-15 xl:mx-10 2xl:mt-20 2xl:mx-25 mt-5 uppercase font-bricolage_Grotesque-sans">
                         <h1>
                             we are a <span className="text-quant-yellow">family</span> of
                         </h1>
@@ -118,13 +118,13 @@ and being part of a vibrant, supportive team culture.`,
                     </div>
 
                     {/* image Section  */}
-                    <div className="absolute w-full top-[90%] lg:top-[75vh] xl:bottom-[-30%] xl:top-[100%] 2xl:top-[70%] flex justify-center items-center right-0 lg:right-[0%] ">
-                        <div className="overflow-hidden lg:w-[70vw] lg:h-[70vh] xl:w-[80vw] xl:h-[80vh] 2xl:w-[80vw] 2xl:h-[80vh] ">
+                    <div className="absolute w-full top-[90%] lg:top-[50vh] xl:bottom-[-30%] xl:top-[100%] 2xl:top-[70%] flex justify-center items-center right-0 lg:right-[0%] ">
+                        <div className="overflow-hidden lg:w-[70vw] lg:h-[50vh] xl:w-[80vw] xl:h-[80vh] 2xl:w-[80vw] 2xl:h-[80vh] ">
                             <Image
                                 src={OfficeImg}
                                 alt="office background"
                                 width={5000}
-                                height={1000}
+                                height={100}
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -132,7 +132,7 @@ and being part of a vibrant, supportive team culture.`,
                 </main>
             </section>
             {/* about section */}
-            <section className="py-[5%] pt-[25vh] md:pt-[83vh] lg:pt-[65vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray mx-auto 2xl:max-w-[1920px]">
+            <section className="py-[5%] pt-[30vh] md:pt-[83vh] lg:pt-[30vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray mx-auto 2xl:max-w-[1920px]">
 
                 {/* Content */}
                 <div className="flex flex-col flex-wrap md:px-12 max-2xl:gap-y-7 xl:flex-row justify-between px-10 lg:px-30 xl:px-18 2xl:px-40 2xl:flex-nowrap text-lg tracking-wide ">
@@ -158,7 +158,7 @@ and being part of a vibrant, supportive team culture.`,
             {/* our values */}
             <section className="font-bricolage_Grotesque-sans 2xl:max-w-[1920px] mx-auto">
                 <div className="flex flex-wrap justify-between items-center mx-10 py-8 md:py-18 lg:mx-25 lg:py-18 xl:mx-20 2xl:mx-35 ">
-                    <div className="main_sub_heading uppercase ">
+                    <div className="main_sub_heading_gb uppercase ">
                         <h1 className="">
                             Our<span className="text-[#BA4B2F]"> values </span>
                         </h1>
@@ -257,7 +257,7 @@ and being part of a vibrant, supportive team culture.`,
             <section className="2xl:max-w-[1920px] bg-quant-gray py-10 xl:py-20 mx-auto">
                 {/* Heading */}
                 <div className="mx-10 lg:mx-25 xl:mx-20 2xl:mx-35 xl:mb-16">
-                    <div className="main_sub_heading font-bricolage_Grotesque-sans uppercase xl:leading-18 2xl:leading-20">
+                    <div className="main_sub_heading_gb font-bricolage_Grotesque-sans uppercase xl:leading-18 2xl:leading-20">
                         <h1>words from</h1>
                         <h1>
                             Our <span className="text-[#BA4B2F]">team</span>
@@ -315,9 +315,9 @@ and being part of a vibrant, supportive team culture.`,
                 </div>
             </section>
             {/* global presence */}
-            <section className="2xl:max-w-[1920px]">
+            <section className="2xl:max-w-[1920px] mx-auto">
                 <div className="flex justify-between items-center max-sm:flex-wrap mx-10 lg:mx-25 py-10 xl:mx-20 xl:py-18 2xl:mx-35 2xl:py-18 font-bricolage_Grotesque-sans">
-                    <div className="main_sub_heading uppercase xl:leading-18 2xl:leading-18">
+                    <div className="main_sub_heading_gb uppercase xl:leading-18 2xl:leading-18">
                         <h1 >
                             <span className="text-[#BA4B2F]"> global </span>
                         </h1>
@@ -340,17 +340,32 @@ and being part of a vibrant, supportive team culture.`,
                                 various colleagues.
                             </p>
                         </div>
-                        <button className="uppercase max-sm:mt-5 px-8 py-2 xl:px-15 xl:py-5 bg-quant-blue text-quant-white flex items-center gap-x-5 mt-5 cursor-pointer font-work-Sans-sans">
-                            view our offices <FaArrowRight />
+                        <button >
+                           <Link className="uppercase max-sm:mt-5 px-8 py-2 xl:px-15 xl:py-5 bg-quant-blue text-quant-white flex items-center gap-x-5 mt-5 cursor-pointer font-work-Sans-sans" href="/global_office">  view our offices <FaArrowRight /></Link>
                         </button>
                     </div>
                 </div>
             </section>
             {/* explore careers */}
-            <section className="2xl:max-w-[1920px]">
-                <div>
-                
-                </div>  
+            <section className="2xl:max-w-[1920px] mx-auto">
+                <div className="bg-[url('/images/officeImg/carrer_banner.png')] bg-cover bg-center w-full h-[300px] md:h-[500px]">
+                    <div className="flex flex-col justify-center items-center h-full text-center">
+                        <div className="main_sub_heading uppercase font-bricolage_Grotesque-sans 2xl:leading-20 text-quant-white">
+                            <h1>
+                                explore <span className="text-quant-yellow">careers</span> of
+                            </h1>
+                            <h1>at quantbox</h1>
+                        </div>
+                        <button>
+                            <Link
+                                href="/careers"
+                                className="uppercase px-8 py-2 xl:px-15 xl:py-5 bg-quant-yellow text-quant-black flex items-center gap-x-5 mt-5 cursor-pointer font-work-Sans-sans"
+                            >
+                                see open positions <FaArrowRight />
+                            </Link>
+                        </button>
+                    </div>
+                </div>
             </section>
 
 

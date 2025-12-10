@@ -12,6 +12,7 @@
   --color-quant-blue: #38618c;
   --color-quant-white: #ffffff;
   --color-quant-gray: #fff9f3;
+  --color-quant-text: #EDE3DA;
 }
 
 @keyframes loaderTextGradient {
@@ -48,10 +49,10 @@ body {
   @apply text-[30px] md:text-[48px] lg:text-[60px] xl:text-[70px] 2xl:text-[86px]  font-medium;
 }
 .main_sub_heading{
-  @apply text-[20px] md:text-[30px] lg:text-[40px] xl:text-[70px] 2xl:text-[70px] font-medium;
+  @apply text-[30px] md:text-[30px] lg:text-[40px] xl:text-[70px] 2xl:text-[70px] font-medium;
 }
 .main_sub_heading_gb{
-  @apply text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[70px] font-medium;
+  @apply text-[30px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[70px] font-medium;
 }
 .main_sub_animation_title{
   @apply text-[18px] md:text-[20px] lg:text-[30px] xl:text-[48px] 2xl:text-[48px] font-medium;

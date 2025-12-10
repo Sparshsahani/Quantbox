@@ -65,7 +65,7 @@ export default function Team() {
             {/* hero section */}
             <section >
                 <main
-                    className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[65vh] md:h-[80vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[100vh] text-quant-white p-10 overflow-visible 2xl:max-w-[1920px] mx-auto`}
+                    className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[45vh] md:h-[80vh] lg:h-[80vh] xl:h-[100vh] 2xl:h-[100vh] text-quant-text p-10 overflow-visible 2xl:max-w-[1920px] mx-auto`}
                 >
 
                     <div className="flex flex-wrap gap-x-2 items-center mb-2 lg:mx-15 xl:mx-10 2xl:mx-27">
@@ -102,7 +102,7 @@ export default function Team() {
                 </main>
             </section>
             {/* about section */}
-            <section className="py-[5%] pt-[50vh] md:pt-[83vh] lg:pt-[65vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray mx-auto 2xl:max-w-[1920px]">
+            <section className="py-[5%] pt-[30vh] md:pt-[83vh] lg:pt-[30vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray mx-auto 2xl:max-w-[1920px]">
 
                 {/* Content */}
                 <div className="flex flex-col flex-wrap md:px-12 max-2xl:gap-y-7 xl:flex-row justify-between px-10 lg:px-30 xl:px-18 2xl:px-40 2xl:flex-nowrap text-lg tracking-wide ">

@@ -5,6 +5,22 @@ import Image from "next/image";
 export default function QbChess() {
   const qbData = [
     {
+      img: "/images/qbChessImg/img3.png",
+      title: "CHENNAI GRAND MASTERS 2025",
+      description_1:
+      "The sponsorship of the Chennai Grand Masters 2025 by Quantbox underscores our unwavering commitment to the game of chess, built on the shared values of strategy, precision, and forward thinking. Quantbox is proud to support this prestigious event, confident that this collaboration will inspire excellence and drive the sport to new horizons. ",
+    },
+    {
+      img: "/images/qbChessImg/img2.png",
+      title: "ASSOCIATION WITH ARJUN ERIGAISI",
+      description_1:
+      "Quantbox is proud to partner with Arjun Erigaisi, one of India’s top grandmasters and only the second Indian to cross the 2800+ Elo mark.",
+      description_2:
+      "Through this association, we support Arjun’s competitive journey while drawing on his insight to inspire and mentor rising chess talent across the country.",
+      description_3:
+      " His pursuit of excellence mirrors our own — motivating the next generation to think deeper, move faster, and aim higher.",
+    },
+    {
       img: "/images/qbChessImg/img1.png",
       title: "THE QB CHESS SCHOLARSHIP",
       description_1:
@@ -12,23 +28,13 @@ export default function QbChess() {
       description_2:
         "Rooted in discipline and strategy, the programme nurtures not just chess players — but future thinkers, leaders, and champions",
     },
-    {
-      img: "/images/qbChessImg/img2.png",
-      title: "ASSOCIATION WITH ARJUN ERIGAISI",
-      description_1:
-        "Quantbox is proud to partner with Arjun Erigaisi, one of India’s top grandmasters and only the second Indian to cross the 2800+ Elo mark.",
-      description_2:
-        "Through this association, we support Arjun’s competitive journey while drawing on his insight to inspire and mentor rising chess talent across the country.",
-      description_3:
-        " His pursuit of excellence mirrors our own — motivating the next generation to think deeper, move faster, and aim higher.",
-    },
   ];
   return (
     <>
       {/* hero section */}
-      <section>
+      <section className="2xl:max-w-[1920px] mx-auto">
         <main
-          className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[45vh] md:h-[65vh] lg:h-[80vh] xl:h-[90vh] text-quant-white p-10 overflow-visible`}
+          className={`relative bg-[url('/images/hero_bg.png')] bg-[30px_120px] md:bg-[10px_100px] xl:bg-[90px_200px] 2xl:bg-[50px_195px] bg-quant-orange bg-cover bg-no-repeat h-[45vh] md:h-[35vh] lg:h-[80vh] xl:h-[90vh] text-quant-white p-10 overflow-visible`}
         >
           {/* Headline Text */}
           <div className="text-3xl md:text-5xl md:mx-5 xl:text-7xl 2xl:text-8xl lg:mx-20 xl:mx-25 mt-5 lg:mt-15 uppercase font-hanken-grotesk">
@@ -45,7 +51,7 @@ export default function QbChess() {
               <Image
                 src={QbChessImg}
                 alt="Qb chess background"
-                width={500}
+                width={8000}
                 height={500}
                 className="w-full h-full object-cover"
               />
@@ -54,7 +60,7 @@ export default function QbChess() {
         </main>
       </section>
       {/* about section */}
-      <section className=" py-[5%] pt-[30vh] md:pt-[83vh] lg:pt-[65vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray">
+      <section className=" py-[5%] pt-[30vh] md:pt-[35vh] lg:pt-[65vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray 2xl:max-w-[1920px] mx-auto">
         {/* Heading */}
         {/* Content */}
         <div className="flex flex-col flex-wrap md:px-12 max-2xl:gap-y-7 xl:flex-row justify-between px-10 xl:px-18 2xl:px-40 2xl:flex-nowrap text-lg tracking-wide">
@@ -78,7 +84,7 @@ export default function QbChess() {
         </div>
       </section>
       {/* chess section */}
-      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-40  ">
+      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-40 ">
         {/* Heading */}
         <div className="mb-12 xl:w-6xl uppercase">
           <div className="grid grid-cols-[60%_40%] max-sm:grid-cols-[70%_30%]">
@@ -107,7 +113,7 @@ export default function QbChess() {
                   />
                 </div>
                 {/* Right Column */}
-                <div className="space-y-5">
+                <div className="space-y-5 flex flex-col justify-center">
                   <h2 className="custom-heading-para">{items.title}</h2>
                   <p className="custom-para text-justify tracking-tight">
                     {items.description_1}

@@ -11,8 +11,8 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
   const featuresLink = [
-    { Link: "About", routes: "#about" },
-    { Link: "Careers", routes: "/careers" },
+    { Link: "Team", routes: "/team" },
+    { Link: "Culture", routes: "/office_culture" },
   ];
 
   // Detect scroll direction
@@ -65,8 +65,8 @@ export default function Navbar() {
                 </div>
               );
             })}
-            <button className="bg-quant-blue text-quant-white px-4 py-2">
-              <Link href="/global_office">GLOBAL OFFICES</Link>
+            <button className="bg-quant-blue text-quant-white px-15 py-2 uppercase">
+              <Link href="/careers">careers</Link>
             </button>
           </div>
 
