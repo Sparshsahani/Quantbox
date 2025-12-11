@@ -98,7 +98,7 @@ export default function Careers() {
       </section>
 
       {/* vier our open positions */}
-      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-40 2xl:max-w-[1920px] mx-auto">
+      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-35 2xl:max-w-[1920px] mx-auto">
         {/* Heading */}
         <div className="xl:w-6xl 2xl:w-full uppercase ">
           <div className=" custom-heading font-medium py-21">

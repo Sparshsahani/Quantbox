@@ -1,6 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 export default function CodeWithPurpose() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const getTransformValue = () => {
+    if (isMobile) return `translateX(-${activeIndex * 50}vw)`;
+    return `translateX(-${activeIndex * 22}vw)`;
+  };
+
   const milestones = [
     { date: "Jun 2021", title: "First set of freshers" },
     { date: "Mar 2022", title: "Bangalore, Amsterdam & Singapore" },
@@ -26,38 +32,38 @@ export default function CodeWithPurpose() {
     );
   };
   useEffect(() => {
-  const interval = setInterval(() => {
-    nextSlide();
-  }, 3500); // 3.5 seconds auto slide
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3500); // 3.5 seconds auto slide
 
-  return () => clearInterval(interval);
-}, [activeIndex]);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
   return (
 
     <>
-      <section className="relative 2xl:max-w-[1920px] mx-auto h-[100vh] overflow-hidden">
-        <div className=" bg-[url('/images/codewithpurposeImg/hero_banner.png')] bg-cover bg-center w-full h-[300px] md:h-[600px] font-bricolage_Grotesque-sans ">
-          <div className="flex flex-col justify-center items-start h-full">
-            <div className="main_sub_heading uppercase 2xl:leading-20 text-quant-white ml-35">
+      <section className="relative 2xl:max-w-[1920px] mx-auto h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
+        <div className=" bg-[url('/images/codewithpurposeImg/hero_banner.png')] bg-cover bg-center w-full h-[300px] md:h-[45vh] lg:h-[65vh] xl:h-[65vh] 2xl:h-[65vh] font-bricolage_Grotesque-sans ">
+          <div className="flex flex-col justify-center items-start h-full ml-10 md:ml-10 lg:ml-25 xl:ml-20 2xl:ml-35">
+            <div className="main_sub_heading uppercase xl:leading-13 2xl:leading-20 text-quant-white ">
               <h1>
                 our <span className="text-quant-orange">milestones</span>
               </h1>
               <h1>marked by code</h1>
               <h1>and curiosity</h1>
             </div>
-            <p className="text-quant-white ml-35 font-work-Sans-sans custom-para">Charting a timeline of relentless growth</p>
+            <p className="text-quant-white font-work-Sans-sans custom-para">Charting a timeline of relentless growth</p>
           </div>
-          <div className=" absolute bottom-[23%] left-[40%] flex flex-row gap-x-8 ">
+          <div className=" absolute bottom-[33%] lg:bottom-[26%] xl:bottom-[23%] left-[40%] flex flex-row gap-x-8 ">
             <div
               className="flex flex-row gap-x-8 transition-transform duration-500"
               style={{
-                transform: `translateX(-${activeIndex * 22}vw)`,
+                transform: getTransformValue(),
               }}
             >
               {milestones.map((item, index) => {
                 // const isActive = index === activeIndex;
-                return <div key={index} className=" h-[24vh] w-[20vw] bg-quant-gray border rounded-3xl border-quant-orange pl-5.5 pt-10.5">
+                return <div key={index} className="xl:h-[24vh] w-[40vw] md:w-[20vw] 2xl:w-[22vw] bg-quant-gray border rounded-3xl border-quant-orange p-5 md:pl-5.5 md:pt-10.5">
                   <h3 className="custom-milestone-text font-medium text-quant-orange capitalize">{item.date}</h3>
                   <p className="custom-careers-title font-medium">{item.title}</p>
                 </div>

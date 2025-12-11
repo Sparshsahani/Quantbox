@@ -128,11 +128,11 @@ export default function Team() {
             {/* guiding our progress */}
             <section className="font-bricolage_Grotesque-sans 2xl:max-w-[1920px] mx-auto">
                 <div className="main_sub_heading uppercase my-10 xl:my-15 2xl:my-19">
-                    <h1 className="mx-10 lg:mx-25 xl:mx-20 2xl:mx-30">
+                    <h1 className="mx-10 lg:mx-25 xl:mx-20 2xl:mx-35">
                         GUIDING Our<span className="text-[#BA4B2F]"> PROGRESS </span>
                     </h1>
                 </div>
-                <div className="flex flex-wrap justify-between gap-x-5 gap-y-12 mx-10 mb-10 lg:mx-20 xl:mx-25 xl:mb-34 2xl:mx-30 2xl:mb-34">
+                <div className="flex flex-wrap justify-between gap-x-5 gap-y-12 mx-10 mb-10 lg:mx-20 xl:mx-25 xl:mb-34 2xl:mx-35 2xl:mb-34">
                     {people.map((person, index) => {
                         return <div key={index} className="border border-quant-orange min-w-[100px] md:w-[320px] lg:w-[270px] xl:w-[370px] 2xl:w-[520px]">
                             <div className="m-5">

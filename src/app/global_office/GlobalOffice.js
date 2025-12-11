@@ -76,7 +76,7 @@ export default function GlobalOffice() {
             <section className="py-[5%] pt-[30vh] md:pt-[83vh] lg:pt-[30vh] xl:pt-[60vh] 2xl:pt-[50vh] bg-quant-gray mx-auto 2xl:max-w-[1920px]">
 
                 {/* Content */}
-                <div className="flex flex-col  md:px-12 max-2xl:gap-y-7 xl:flex-row justify-between px-10 lg:px-30 xl:px-20 2xl:px-40 2xl:flex-nowrap text-lg tracking-wide ">
+                <div className="flex flex-col  md:px-12 max-2xl:gap-y-7 xl:flex-row justify-between px-10 lg:px-30 xl:px-20 2xl:px-35 2xl:flex-nowrap text-lg tracking-wide ">
                     {/* Left Column */}
                     <div className="main_sub_heading_gb uppercase">
                         <h1 className=" xl:leading-18 2xl:leading-18 font-bricolage_Grotesque-sans">

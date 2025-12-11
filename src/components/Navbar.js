@@ -49,6 +49,8 @@ export default function Navbar() {
             <Link href={"/"}>
               <Image
                 src={logo}
+                width={8000}
+                height={500}
                 alt="Company Logo"
                 className="w-[40vw] md:w-[20vw] lg:w-[15vw] 2xl:w-[13vw]"
               />
@@ -65,7 +67,7 @@ export default function Navbar() {
                 </div>
               );
             })}
-            <button className="bg-quant-blue text-quant-white px-15 py-2 uppercase">
+            <button className="bg-quant-blue text-quant-white px-10 2xl:px-15 py-2 uppercase">
               <Link href="/careers">careers</Link>
             </button>
           </div>

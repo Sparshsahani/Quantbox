@@ -64,11 +64,11 @@ export default function Milliseconds() {
   };
 
   return (
-    <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-35 xl:pt-40 ">
+    <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-25 xl:px-20 2xl:px-35 xl:pt-40 2xl:max-w-[1920px] mx-auto">
       {/* Heading */}
       <div className="mb-12 xl:w-6xl uppercase">
 
-        <div className=" custom-heading font-medium">
+        <div className=" main_sub_heading_gb font-medium">
           <h1 >where <span className="text-quant-orange">milliseconds</span> </h1>
           <h1>move markets.</h1>
         </div>

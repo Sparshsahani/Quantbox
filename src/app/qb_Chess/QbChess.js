@@ -84,7 +84,7 @@ export default function QbChess() {
         </div>
       </section>
       {/* chess section */}
-      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-40 ">
+      <section className="px-10 pt-20 md:px-10 md:pt-28 lg:px-12 xl:px-20 2xl:px-35 ">
         {/* Heading */}
         <div className="mb-12 xl:w-6xl uppercase">
           <div className="grid grid-cols-[60%_40%] max-sm:grid-cols-[70%_30%]">
