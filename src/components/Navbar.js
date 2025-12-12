@@ -41,7 +41,9 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`sticky w-full top-0 z-50 bg-quant-white mx-auto p-5 xl:px-16 xl:py-5 2xl:px-30 2xl:py-9 shadow-md transition-transform duration-500 ease-in-out xl:max-w-[1920px] `}
+        className={`sticky w-full top-0 z-50 bg-quant-white mx-auto p-5 xl:px-16 xl:py-5 2xl:px-30 2xl:py-9 shadow-md transition-transform duration-500 ease-in-out xl:max-w-[1920px]
+    ${showNavbar ? "translate-y-0" : "-translate-y-full"}
+  `}
       >
         <nav className="flex justify-between items-center lg:mx-20 xl:mx-6 ">
           {/* Logo */}
@@ -140,11 +142,11 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/global_office"
+              href="/office_culture"
               className="bg-quant-blue text-white px-6 py-3 rounded"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              GLOBAL OFFICES
+              CAREERS
             </Link>
           </motion.div>
         )}

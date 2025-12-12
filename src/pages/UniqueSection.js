@@ -70,23 +70,14 @@ export default function UniqueSection() {
     <>
       <section className="font-bricolage_Grotesque-sans 2xl:max-w-[1920px] mx-auto">
         <div className="flex flex-wrap justify-between items-center mx-10 py-8 md:py-18 lg:mx-25 lg:py-18 xl:mx-20 2xl:mx-35 ">
-          <div className="main_sub_heading_gb uppercase ">
+          <div className="main_sub_heading_gb uppercase max-lg:w-full lg:w-[50%]">
             <h1 className="">
               Our<span className="text-[#BA4B2F]"> values </span>
             </h1>
           </div>
-          <div className="custom-heading-para font-work-Sans-sans uppercase max-sm:mt-8 ">
+          <div className="custom-heading-para font-work-Sans-sans uppercase max-sm:mt-8 max-lg:w-full lg:w-[50%]">
             <p className="">
-              Performance Meets Purpose At
-            </p>
-            <p>
-              Quantbox. Quantbox is built on
-            </p>
-            <p>
-              ownership, integrity, collaboration, and
-            </p>
-            <p>
-              the constant pursuit of excellence.
+              Performance Meets Purpose At Quantbox. Quantbox is built on ownership, integrity, collaboration, and the constant pursuit of excellence.
             </p>
           </div>
         </div>
@@ -95,7 +86,7 @@ export default function UniqueSection() {
         <section ref={ref}
           className={`${enableAnimation ? "relative h-[400vh]" : ""} bg-transparent`}>
           {/* Sticky viewport container */}
-          <div className={`sticky xl:top-[80px] 2xl:top-[100px] flex flex-col items-center justify-center bg-white w-full space-y-4 2xl:py-10 ${enableAnimation ? "" : "static"
+          <div className={`sticky xl:top-0 flex flex-col items-center justify-center bg-white w-full space-y-4 2xl:py-10 ${enableAnimation ? "" : "static"
             }`}>
             {/* Section 1 */}
             <motion.div

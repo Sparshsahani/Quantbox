@@ -219,6 +219,7 @@ and being part of a vibrant, supportive team culture.`,
                                         src="/videos/Render.mp4"
                                         loop
                                         muted
+                                        controls
                                         className="object-cover"
                                     />
                                 </motion.div>
@@ -242,6 +243,7 @@ and being part of a vibrant, supportive team culture.`,
                                         src="/videos/Render.mp4"
                                         loop
                                         muted
+                                        controls
                                         className="object-cover"
                                     />
                                 </motion.div>
@@ -297,7 +299,7 @@ and being part of a vibrant, supportive team culture.`,
                     {/* IMAGE */}
                     <div className=" w-[100px] xl:w-[180px] xl:h-[220px] overflow-hidden transition-all duration-500">
                         <Image
-                            alt={current.name}
+                            alt="image"
                             src={current.image}
                             width={8000}
                             height={500}

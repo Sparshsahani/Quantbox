@@ -64,8 +64,19 @@ body {
   @apply text-[14px] md:text-[14px] lg:text-[14px] xl:text-[17px] 2xl:text-[17px] ;
 }
 
+.hover_block{
+  @apply text-[18px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[48px] font-medium;
+}
+
 .custom_read_more_btn{
   @apply text-[14px]
+}
+.hover_text{
+  @apply text-[14px] md:text-[14px] lg:text-[17px] xl:text-[20px] 2xl:text-[20px] font-medium;
+}
+
+.hover_para {
+  @apply text-[14px] 2xl:text-[17px] ;
 }
 
 .nav-btn {
@@ -106,4 +117,16 @@ body {
 
 .vertical_line {
   @apply before:content-[''] before:absolute before:left-[10vw] md:before:left-12 lg:before:left-13 xl:before:left-43 before:top-[50%] md:before:top-[38%] 2xl:before:top-[42%] before:h-[15%] before:w-[1px] before:bg-gray-200;
+}
+
+.xl_hover_config{
+  @apply  xl:px-9 xl:opacity-0 xl:group-hover:opacity-100  xl:translate-y-4 xl:group-hover:translate-y-0 xl:transition-all xl:duration-300 xl:ease-out xl:leading-8 2xl:leading-11
+}
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;   /* IE & Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
 }
