@@ -43,9 +43,19 @@ export default function CodeWithPurpose() {
 
     <>
       <section className="relative 2xl:max-w-[1920px] mx-auto h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
-        <div className=" bg-[url('/images/codewithpurposeImg/hero_banner.png')] bg-cover bg-center w-full h-[300px] md:h-[45vh] lg:h-[65vh] xl:h-[65vh] 2xl:h-[65vh] font-bricolage_Grotesque-sans ">
+        {/* 🔥 BACKGROUND VIDEO */}
+        <video
+          className="absolute top-0 left-0 w-full h-[300px] md:h-[45vh] lg:h-[65vh] xl:h-[65vh] 2xl:h-[65vh] object-cover"
+          src="/videos/hero_banner_bg.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto" // Optional, helps loading
+        />
+        <div className=" z-10 w-full h-[300px] md:h-[45vh] lg:h-[65vh] xl:h-[65vh] 2xl:h-[65vh] font-bricolage_Grotesque-sans">
           <div className="flex flex-col justify-center items-start h-full ml-10 md:ml-10 lg:ml-25 xl:ml-20 2xl:ml-35">
-            <div className="main_sub_heading uppercase xl:leading-13 2xl:leading-20 text-quant-white ">
+            <div className="main_sub_heading uppercase xl:leading-13 2xl:leading-20 text-quant-white z-10">
               <h1>
                 our <span className="text-quant-orange">milestones</span>
               </h1>

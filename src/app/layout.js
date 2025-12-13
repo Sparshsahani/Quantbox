@@ -5,7 +5,7 @@ import {
   work_Sans,
   inter,
 } from "@/lib/font";
-// import ClientWrapper from "@/components/ClientWrapper"; // See step 2
+import ClientWrapper from "@/components/ClientWrapper"; // See step 2
 
 export const metadata = {
   title: "Quantbox",
@@ -22,8 +22,8 @@ export default function RootLayout({ children }) {
       className={`${hankenGrotesk.className} ${bricolageGrotesque.className} ${work_Sans.className} ${inter.className}`}
     >
       <body>
-        {/* <ClientWrapper>{children}</ClientWrapper> */}
-        {children}
+        <ClientWrapper>{children}</ClientWrapper>
+        {/* {children} */}
       </body>
     </html>
   );

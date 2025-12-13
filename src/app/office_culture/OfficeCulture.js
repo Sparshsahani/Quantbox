@@ -193,11 +193,14 @@ and being part of a vibrant, supportive team culture.`,
                                 </div>
                                 <motion.div className="relative max-lg:mx-auto max-lg:mt-5 lg:w-[400px] xl:w-[650px] 2xl:w-[900px] bg-quant-orange shadow-md overflow-hidden pb-5">
                                     <video
-                                        src="/videos/Render.mp4"
+                                        src="/videos/pankaj_kewalramani.mp4"
                                         loop
                                         muted
                                         controls
                                         className="object-cover"
+                                        playsInline
+                                        preload="auto"
+                                        autoPlay
                                     />
                                 </motion.div>
 
@@ -216,11 +219,14 @@ and being part of a vibrant, supportive team culture.`,
                                 </div>
                                 <motion.div className="relative max-lg:mx-auto max-lg:mt-5  lg:w-[400px] xl:w-[650px] 2xl:w-[900px] bg-quant-orange shadow-md overflow-hidden pb-5">
                                     <video
-                                        src="/videos/Render.mp4"
+                                        src="/videos/sathvik_gupta.mp4"
                                         loop
                                         muted
                                         controls
                                         className="object-cover"
+                                        playsInline
+                                        preload="auto"
+                                        autoPlay
                                     />
                                 </motion.div>
 
@@ -240,11 +246,14 @@ and being part of a vibrant, supportive team culture.`,
                                 </div>
                                 <motion.div className="relative max-lg:mx-auto max-lg:mt-5  lg:w-[400px] xl:w-[650px] 2xl:w-[900px] bg-quant-orange shadow-md overflow-hidden pb-5">
                                     <video
-                                        src="/videos/Render.mp4"
+                                        src="/videos/ankush_phulia.mp4"
                                         loop
                                         muted
                                         controls
                                         className="object-cover"
+                                        playsInline
+                                        preload="auto"
+                                        autoPlay
                                     />
                                 </motion.div>
 
@@ -343,7 +352,7 @@ and being part of a vibrant, supportive team culture.`,
                             </p>
                         </div>
                         <button >
-                           <Link className="uppercase max-sm:mt-5 px-8 py-2 xl:px-15 xl:py-5 bg-quant-blue text-quant-white flex items-center gap-x-5 mt-5 cursor-pointer font-work-Sans-sans" href="/global_office">  view our offices <FaArrowRight /></Link>
+                            <Link className="uppercase max-sm:mt-5 px-8 py-2 xl:px-15 xl:py-5 bg-quant-blue text-quant-white flex items-center gap-x-5 mt-5 cursor-pointer font-work-Sans-sans" href="/global_office">  view our offices <FaArrowRight /></Link>
                         </button>
                     </div>
                 </div>

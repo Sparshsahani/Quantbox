@@ -65,12 +65,15 @@ export default function Careers() {
         <div className="flex flex-col justify-center items-center xl:gap-y-35 mt-25">
           <div className="m-5">
             <video
-              src="/videos/hero_section_video_qb.mp4"
+              src="/videos/arihanth_samarv3.mp4"
               type="video/mp4"
               loop
               muted
+              autoPlay
               controls
               className="w-full xl:w-[60vw]"
+              playsInline
+              preload="auto"
 
             />
             <div className="font-bricolage_Grotesque-sans main_video_title mt-5">
@@ -80,12 +83,15 @@ export default function Careers() {
           </div>
           <div className="m-5">
             <video
-              src="/videos/hero_section_video_qb.mp4"
+              src="/videos/karan_v2-2.mp4"
               type="video/mp4"
               loop
               muted
+              autoPlay
               controls
               className="w-full xl:w-[60vw]"
+              playsInline
+              preload="auto"
 
             />
             <div className="font-bricolage_Grotesque-sans main_video_title mt-5">

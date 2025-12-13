@@ -12,8 +12,8 @@ export default function InsideQuantbox() {
   const images = [
     "/images/insidequantboxImg/quant_banner.png",
     "/images/insidequantboxImg/playing_chess.png",
-    "/images/insidequantboxImg/quant_banner.png",
-    "/images/insidequantboxImg/playing_chess.png",
+    "/images/insidequantboxImg/speech.png",
+    "/images/insidequantboxImg/honor.png",
   ];
 
   const [index, setIndex] = useState(0);
